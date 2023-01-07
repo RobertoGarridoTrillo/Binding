@@ -3,7 +3,17 @@
   <h1>{{title}}</h1>
   <p>Mi name is {{name}}</p>
 
+
   <div>La suma es: {{getSuma(1,2)}}</div>
+
   <br>
-  <input type="text" class="form-control" [placeholder]="textPlaceHolder">
+
+  <input
+    type="text"
+    class="form-control"
+    [placeholder]="textPlaceHolder"
+    [disabled]="deshabilitado">
+
+  <img [src]=src class="img-fluid"
+       alt="Cargando img" width="200px" height="200px">
 </div>
