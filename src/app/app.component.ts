@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'binding';
+  title = 'Interpolacion';
+  name = 'Roberto';
+  textPlaceHolder="Escriba algo aqui, por favor";
+
+  constructor() {
+    setInterval(() => this.name = 'Garrido', 2000);
+  };
+
+  getSuma(numero1: number, numero2: number){
+    return numero1 + numero2;
+
+  }
 }
