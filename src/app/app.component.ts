@@ -11,6 +11,8 @@ export class AppComponent {
   textPlaceHolder = "Escriba algo aqui, por favor";
   deshabilitado = true;
   src = "";
+  txt = "Hello World";
+
 
   constructor() {
     setInterval(() => {
@@ -25,6 +27,14 @@ export class AppComponent {
 
   getSuma(numero1: number, numero2: number) {
     return numero1 + numero2;
-
   }
+
+  cambiarTexto():void{
+    this.txt = 'Bye bye image';
+    this.src ="";
+  }
+  //------------------------------------------------------------
+  texto = "";
+
+
 }
