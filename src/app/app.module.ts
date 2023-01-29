@@ -11,6 +11,7 @@ import { EventBindingComponent } from './components/event-binding/event-binding.
 import { FilterBindingComponent } from './components/filter-binding/filter-binding.component';
 import { TemplateVariableComponent } from './components/template-variable/template-variable.component';
 import { NgModelComponent } from './components/ng-model/ng-model.component';
+import { SafeNavigationComponent } from './components/safe-navigation/safe-navigation.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NgModelComponent } from './components/ng-model/ng-model.component';
     EventBindingComponent,
     FilterBindingComponent,
     TemplateVariableComponent,
-    NgModelComponent
+    NgModelComponent,
+    SafeNavigationComponent
   ],
   imports: [
     BrowserModule,
