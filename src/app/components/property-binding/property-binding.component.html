@@ -1,0 +1,12 @@
+
+<!--With string interpolation-->
+<a href ={{website.href}} textContent={{website.name}}></a>
+<br>
+<img src={{website.logo}} width={{website.width}}>
+<p textContent="{{website.description}}"></p>
+
+<!--With property binding-->
+<a [href] ="website.href" [textContent]="website.name"></a>
+<br>
+<img [src]="website.logo" [width]="website.width">
+<p [textContent]="website.description"></p>

@@ -1,31 +1,8 @@
-<div class="container mt-4">
-  <div class="row">
-    <div class="col col-md-*"><h1>{{title}}</h1></div>
-    <div class="col col-md-*"><p>Mi name is {{name}}</p></div>
-    <div class="col col-md-*">La suma es: {{getSuma(1,2)}}</div>
-  </div>
-  <br>
-</div>
-
-
-<!--div.container.mt-4>h3{{{texto}}}+button.btn.btn-primary[click=cambiarTexto();]>{Click me}-->
-<div class="container mt4">
-  <input type="text" class="form-control" [placeholder]="textPlaceHolder" [disabled]="deshabilitado">
-  <br>
-  <img [src]=src class="img-fluid" alt="Cargando img" width="200px" height="200px">
-  <br>
-</div>
-<div class="container mt-4">
-  <!--  button.btn.btn-primary{Click me}-->
-  <h3>{{txt}}</h3>
-  <button class="btn btn-primary" (click)="cambiarTexto();">Click me</button>
-  <br>
-</div>
-
-<!--div.container.mt-4>input[type="text"].form-control[placeholder="Escriba algo aqui"]>br-->
-<div class="container mt-4">
-  <input type="text" class="form-control" placeholder="Escriba algo aqui" [(ngModel)]="texto">
-  <br>
-  {{texto}}
-</div>
-
+<app-string-interpolacion></app-string-interpolacion>
+<app-property-binding></app-property-binding>
+<app-class-binding></app-class-binding>
+<app-style-binding></app-style-binding>
+<app-event-binding></app-event-binding>
+<app-filter-binding></app-filter-binding>
+<app-template-variable></app-template-variable>
+<app-ng-model></app-ng-model>

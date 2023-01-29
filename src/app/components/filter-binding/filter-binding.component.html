@@ -1,0 +1,14 @@
+<!--Con filtrado normal-->
+<div id="divMouse" (mousemove)="mostrarCoordenadas($event)">
+  <span>Coodenada : {{mouseX}}</span><br>
+  <span>Coodenada : {{mouseY}}</span>
+</div>
+<input (keyup)="logKeyNormal($event)">
+<p [style.background]="isActive ? 'red': 'white'">{{msg}}</p>
+
+<!--Con Event filter-->
+<input
+  (keyup)="isActiveFilter = false"
+  (keyup.backspace)="logKeyFilter()"
+  (keyup.delete)="logKeyFilter()">
+<p [style.background]="isActiveFilter ? 'red': 'white'">{{msgFilter}}</p>
